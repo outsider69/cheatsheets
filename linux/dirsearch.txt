@@ -1,0 +1,6 @@
+# extensions apsx and php, r = recursive, timeout 1 second
+dirsearch.py -u http://<domain> -e aspx,php,html -x 403,404 -r --timeout=1 --plain-text-report=<pathToResult> --full-url
+
+# use proxy
+--proxy=localhost:8080
+

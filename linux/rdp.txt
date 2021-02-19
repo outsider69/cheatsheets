@@ -1,0 +1,6 @@
+# RDP connection from linux
+rdesktop -u <user> -p <password> <rhost> -d <domain>
+
+# RDP with pass the hash
+xfreerdp /u:<user> /d:<domain> /pth:<hash> /v:<rhost>
+

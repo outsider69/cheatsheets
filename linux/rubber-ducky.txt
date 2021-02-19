@@ -1,0 +1,26 @@
+# german keyboard layout
+java -jar duckencoder.jar -l de -i <duckyScript>.txt -o inject.bin
+
+# wait for 5 seconds
+DELAY 5000
+
+# press ENTER
+ENTER
+
+# press CTRL + S
+CTRL S
+
+# wait 2 seconds between each command
+DEFAULT_DELAY 200
+
+# open mac OS X Spotlight
+GUI SPACE
+STRING <string>
+
+# open CMD terminal
+WINDOWS
+STRING cmd.exe
+
+# press Windows key + R
+GUI r
+

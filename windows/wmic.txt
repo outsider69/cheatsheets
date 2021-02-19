@@ -1,0 +1,30 @@
+# enable WinRM remotely
+wmic /node:<rhost> process call create "powershell enable-psremoting -force"
+
+# get informations domain and domain controller
+wmic ntdomain list
+
+# list all patches
+wmic qfe
+
+# execute process
+wmic process call create "<processName>"
+
+# kill process
+wmic process where name="<processName>" call terminate
+
+# view logical shares
+wmic logicaldisk get description,name
+
+# display architecture (32 or 64 bit)
+wmic cpu get DataWidth /format:list
+
+# remotely determine logged in user
+wmic /node:<rhost> computersystem get username
+
+# execute file hosted over SMB on remote system with specified credential
+wmic /node:<rhost> /user:<domain>\<user> /password:<password> process call create "\\<rhost>\<share>\<file.exe>"
+
+# remotely start RDP
+wmic /node:<rhost> path Win32_TerminalServiceSetting where AllowTSConnections="0" call SetAllowTSConnections "1"
+

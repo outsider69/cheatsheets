@@ -1,0 +1,15 @@
+# home directory (Windows NT 6.0 - 10.0)
+<systemDrive>:\Users\<user>
+
+# home directory (Windows NT 5.0 - 5.2)
+<systemDrive>:\Documents and Settings\<user>
+
+# cmd.exe
+<systemDrive>:\WINDOWS\system32\cmd.exe
+
+# powershell
+<systemDrive>:\WINDOWS\system32\WindowsPowershellShell\v1.0\powershell.exe
+
+# temp dir
+<systemDrive>:\Windows\Temp
+

@@ -1,0 +1,9 @@
+# execute command
+select sys_eval("<command>");
+
+# read a file
+select load_file("<path/to/file>");
+
+# write to file
+Select * from <table> into outfile '<path/to/file>';
+

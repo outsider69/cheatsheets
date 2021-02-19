@@ -1,0 +1,6 @@
+# mount remote share
+mount -t <filesystem> <rhost>:<port>/<path>
+
+# set complete filesystem to read write
+mount -o remount, rw /
+

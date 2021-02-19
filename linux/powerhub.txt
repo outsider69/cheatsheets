@@ -1,0 +1,6 @@
+# start server
+python3 powerhub.py <lhost> --auth <user>:<password>
+
+# upload files will be stored in:
+~/.local/share/powerhub/upload/
+

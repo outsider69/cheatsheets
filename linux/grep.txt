@@ -1,0 +1,9 @@
+# grep ipv4 addresses
+grep -Eo '([0-9]*\.){3}[0-9]*' <file>
+
+# grep for html title, -o only matching part, -e match pattern
+grep -oiE "<title>(.*)</title>"
+
+# grep logical or
+grep 'pattern1\|pattern2' <file>
+
