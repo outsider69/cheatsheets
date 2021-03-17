@@ -5,9 +5,9 @@ In this way, it should be easy to find the right syntax with a simple grep comma
 
 ## Categories
 
-Fuzzing
-Linux
-Mac OS X
-Other
-Windows
+Fuzzing <br>
+Linux <br>
+Mac OS X <br>
+Other <br>
+Windows <br>
 
