@@ -47,6 +47,9 @@ net share
 # mount smb share
 net use <localDrive> \\<rhost>\<remoteDrive>
 
+# or 
+net use * \\<lhost>\<share>
+
 # unmount smb share
 net use <localDrive> \\<rhost>\<remoteDrive> /delete
 

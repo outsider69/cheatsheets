@@ -2,9 +2,7 @@
 <domain>/user/register
 
 # get number of existing user
-/users/<amount>
-# example
-/users/3
+/users/<number>
 
 # code execution as admin - php module needed (403 -> php modules exists)
 

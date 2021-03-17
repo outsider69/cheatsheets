@@ -37,3 +37,6 @@ msf> run
 mtr> portfwd add -l <localPort> -p <rport> -r <rhost>
 rdesktop <rhost:rhost>
 
+# tunnel traffic trough proxy
+set PROXIES HTTP:127.0.0.1:8080
+

@@ -16,7 +16,7 @@ gpg --keyserver <keyserver> --send-key <keyId>
 gpg -a --export <keyId> > <file>.asc
 
 # import public gpg key
-gpg --keyserver <keyserver> --search-keys <keyId> | <firstname lastname>
+gpg --keyserver <keyserver> --search-keys <email>
 
 # export private key
 gpg --armor --export-secret-key <keyId> > <file>.asc
@@ -30,7 +30,7 @@ gpg> passwd
 gpg> save
 
 # decrypt file
-gpg --decrypt <encryptedFile>.gpg> <decryptedFile>
+gpg --decrypt <encryptedFile>.gpg > <decryptedFile>
 
 # import key remotely
 gpg --recv-key <id>

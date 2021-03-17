@@ -10,7 +10,3 @@ Tools > Image Manager > Choose File > Upload
 # use following path to triffer the shell
 http://<rhost>/<path>/myFiles/images/<phpShell>
 
-# References
-https://www.exploit-db.com/exploits/46645
-https://www.exploit-db.com/exploits/46644
-

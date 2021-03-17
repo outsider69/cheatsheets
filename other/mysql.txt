@@ -1,9 +1,21 @@
+# show all databases
+show databases;
+
+# switch context
+use <database>;
+
+# show tables
+show tables;
+
+# print content of table
+select * from <table>;
+
 # execute command
-select sys_eval("<command>");
+select do_system('<command>');
 
-# read a file
-select load_file("<path/to/file>");
+# read file
+select load_file('<file>');
 
-# write to file
-Select * from <table> into outfile '<path/to/file>';
+# wite to file
+select "<content>" into outfile '<file>';
 

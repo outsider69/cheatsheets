@@ -131,14 +131,11 @@ systemctl list-timers --all
 # find world writeable files
 find / -path /proc -prune -o -perm -2 ! -type l -ls 2> /dev/null
 
-# find user writeable files
-find / -writable -type d 2> /dev/null
+# directories that are writeable by user
+find / -writable -type d ! -type l -ls 2>/dev/null
 
 # find nobody files - create new user with the same UID to inherit this files
 find / -path /proc -prune -o -nouser -o -nogroup 2> /dev/null
- 
-# directories that are writeable by user
-find / -writable -type d 2>/dev/null
 
 
 ### running sessions
@@ -179,7 +176,7 @@ lsmod
 # check kernel versions for exploits
 bash /usr/share/linux-exploit-suggester/linux-exploit-suggester.sh -u <uname -a> 
 # or
-searchsploit linux kernel <version> --exclude"(POC)|/dos"
+searchsploit linux kernel <version> 
 # or
 https://raw.githubusercontent.com/lucyoa/kernel-exploits/master/README.md
 
